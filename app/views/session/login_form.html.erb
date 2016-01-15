@@ -1,0 +1,11 @@
+<%= form_tag login_path, method: :post do |f| %>
+  
+  <%= label_tag :email %>
+  <%= text_field_tag :email %>
+
+  <%= label_tag :password %>
+  <%= text_field_tag :password %>
+
+  <%= submit_tag %>
+
+<% end %>
