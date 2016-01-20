@@ -12,8 +12,6 @@ class SessionsController < ApplicationController
       else
         redirect_to login_form_path, notice: 'incorrect username or password'
       end
-    else
-      redirect_to login_form_path, notice: 'we need to have a username and a password'
     end
   end
     
@@ -23,3 +21,4 @@ class SessionsController < ApplicationController
     end
         
 end
+
